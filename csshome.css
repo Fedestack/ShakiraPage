@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -9,32 +9,49 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url(ShakiraFondo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    height: fit-content;
+}
 
-header{
-    color: #ffefc1;
-    text-shadow: 0px 0px 9px #f66b40;
+header {
     background-color: black;
-    text-align: center;
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 45px; 
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rotate {
-    
     border-radius: 50%;
     width: 65px;
     animation: rotateAnimation 6s infinite linear;
-    position: absolute;
     left: 600px;
 }
- .rotate2{
+
+.rotate2 {
     border-radius: 50%;
     width: 65px;
     animation: rotateAnimation 6s infinite linear;
-    position: absolute;
     right: 600px;
- }
+}
 
 
 
@@ -44,6 +61,14 @@ header{
     }
 }
 
+.menu-container-list {
+    font-size: 16px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu-container-item {
     letter-spacing: 5px;
     font-weight: 690;
@@ -51,143 +76,96 @@ header{
 }
 
 
-
 .menu-item {
-    border: 1px solid #f66b40; 
+    border: 1px solid #f66b40;
     padding: 10px;
     background-color: black;
-    color: #f66b40; 
+    color: #f66b40;
     text-shadow: 0px 0px 9px #f66b40;
-    text-transform: uppercase; 
-    
-    border-radius: 50px; 
-   margin: 10px;
-   position: relative;
-   
-   
-}
-.menu-item:hover{
-   background: #ffefc1;
-   
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin: 10px 20px;
 }
 
-.menu-container-list {
-    position: relative;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    font-size: 16px;
-    margin-top: 20px;
+.menu-item:hover {
+    background: #ffefc1;
 }
-
-
-
-
-
-body {
-    background-image: url(ShakiraFondo.png);
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-position: center ;
-   background-size: cover;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; 
-    letter-spacing: 1px;
-    height: fit-content;
-}
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-
-
-
-
-
-
-h1{
+h1 {
     font-size: 50px;
     color: #ffefc1;
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: Helvetica, Arial, sans-serif;
     text-decoration: underline;
     text-shadow: 0px 0px 9px #f66b40;
+    margin-top: 50px;
 }
-.centrado{
+
+.centrado {
     padding-top: 10px;
     font-size: 50px;
     color: #ffefc1;
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: Helvetica, Arial, sans-serif;
     text-decoration: underline;
     text-shadow: 0px 0px 9px #f66b40;
     text-align: center;
-   
+
 }
 
-.justificado{
+.justificado {
     display: flex;
     justify-content: justify;
 }
 
-.espacio{
+.espacio {
     padding: 20px;
     margin: auto;
-   text-wrap: pretty;
-   font-size: 20px;
+    text-wrap: pretty;
+    letter-spacing: 2.5px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.parrafo1{
+.parrafo-container {
+    margin: 100px;
+}
+
+.parrafo {
     display: flex;
     max-width: 75em;
-    margin:20px 120px 0px 120px;
+    margin: 20px 120px 100px 120px;
     align-content: center;
     text-align: justify;
     border-radius: 20px;
     background-color: #ffefc1;
     padding: 15px;
     border: 2px solid #f66b40;
-    
-
-    
 }
 
 
-.parrafo2{
-    display: flex;
-    max-width: 75em;
-    margin:40px 120px 40px 120px;
-    align-content: center;
-    text-align: justify;
-    border-radius: 20px;
-    background-color: #ffefc1;
-    padding: 15px;
-    border: 2px solid #f66b40;
-    
-}
-
-.imagen1{
+.imagen1 {
     border-radius: 20px;
     width: 350px;
     height: 200px;
 }
-.imagen2{
+
+.imagen2 {
     border-radius: 20px;
     width: 150px;
     height: 150x;
 }
 
 /*Formulario*/
-.form-wrap  {
+.form-wrap {
     margin: 40px 500px 40px 500px;
     /*darkgoldenrod;*/
     padding: 10px 25px;
-    background-color:#ffefc1;
+    background-color: #ffefc1;
     border: 2px solid #f66b40;
     display: flex;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
     max-width: 450px;
     border-radius: 20px;
 }
@@ -201,7 +179,7 @@ h1{
 }
 
 .label {
-    margin: 20px 0 10px 0; 
+    margin: 20px 0 10px 0;
     text-align: start;
     font-weight: 550;
     letter-spacing: 2px;
@@ -213,13 +191,13 @@ h1{
 }
 
 
-p{
+p {
     text-align: left;
 }
 
 .form-subtitle {
     font-size: 1.5em;
-    color:black;
+    color: black;
     font-weight: 700;
     margin: 15px;
     text-wrap: balance;
@@ -240,8 +218,8 @@ p{
 textarea {
     min-width: 100%;
     resize: none;
-    min-height: 120px;
-    text-wrap:pretty
+    min-height: 100px;
+    text-wrap: pretty
 }
 
 .label-title {
@@ -253,7 +231,7 @@ textarea {
     text-align: center;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     display: block;
 }
@@ -264,8 +242,8 @@ textarea {
 }
 
 
-footer{
-  
+footer {
+
     color: #ffefc1;
     text-shadow: 0px 0px 9px #f66b40;
     background-color: black;
@@ -273,14 +251,14 @@ footer{
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-  
+
 }
 
-h3{
+h3 {
     text-decoration: underline;
 }
 
-i{
+i {
     color: #ffefc1;
     font-size: 18px;
     text-align: center;
@@ -288,38 +266,45 @@ i{
     border-radius: 10%;
     padding: 15px;
 }
-.fa-youtube:hover{
+
+.fa-youtube:hover {
     background-color: red;
     color: white;
     box-shadow: 0 0px 40px red;
 }
-.fa-facebook-f:hover{
-    background-color:#1877f2;
+
+.fa-facebook-f:hover {
+    background-color: #1877f2;
     color: white;
     box-shadow: 0 0px 40px #1877f2;
 }
-.fa-instagram:hover{
-    background-color:#D43089;
+
+.fa-instagram:hover {
+    background-color: #D43089;
     color: white;
     box-shadow: 0 0px 40px #D43089;
 }
-.fa-spotify:hover{
+
+.fa-spotify:hover {
     background-color: #1DB954;
     color: white;
     box-shadow: 0 0px 40px #1DB954;
 }
-.fa-twitter:hover{
-    background-color:#1DA1F2 ;
+
+.fa-twitter:hover {
+    background-color: #1DA1F2;
     color: white;
     box-shadow: 0 0px 40px #1DA1F2;
 }
-.fa-tiktok:hover{
-    background-color:#25F4EE ;
+
+.fa-tiktok:hover {
+    background-color: #25F4EE;
     color: white;
     box-shadow: 0 0px 40px #25F4EE;
 }
-.fa-apple:hover{
-    background-color:#fc3c44 ;
+
+.fa-apple:hover {
+    background-color: #fc3c44;
     color: white;
     box-shadow: 0 0px 40px #fc3c44;
 }
