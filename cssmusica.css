@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -82,94 +82,99 @@ header {
 
 body {
     background-image: url(ShakiraFondo.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center ;
-   background-size: cover;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; 
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 1px;
     height: fit-content;
-  }
+}
 
 
 
 
-h1, h2{
-    padding-top: 10px;
+h1,
+h2 {
     font-size: 50px;
     color: #ffefc1;
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: Helvetica, Arial, sans-serif;
     text-decoration: underline;
     text-shadow: 0px 0px 9px #f66b40;
     text-align: center;
+    margin: 50px;
 }
 
 
 
 
 
-.album{
+.album {
     height: 350px;
     width: 350px;
     max-width: 100%;
     border-radius: 10px;
     margin: 15px;
-    
+
 }
 
-.album:hover{
+.album:hover {
     transform: scale(1.2);
     transition: transform 0.5s ease-in-out;
 }
 
 
-.imagenes_album{
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 15px; 
-    justify-items: center; 
-    align-items: center; 
-    
+.imagenes_album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+
 }
 
 @media screen and (max-width: 1200px) {
     .imagenes_album {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+        .imagenes_album {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
-@media screen and (max-width: 768px) {
-    .imagenes_album {
-        grid-template-columns: 1fr; 
-    }
-}}
-
-.videosShakira{
+.videosShakira {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px; 
-    justify-items: center; 
+    gap: 30px;
+    justify-items: center;
     align-items: center;
+    margin: 70px;
 }
-iframe{
-    border-radius:5%;
+
+iframe {
+    border-radius: 5%;
 }
 
 @media screen and (max-width: 1200px) {
     .videosShakira {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+        .videosShakira {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
-@media screen and (max-width: 768px) {
-    .videosShakira {
-        grid-template-columns: 1fr; 
-    }
-}}
+footer {
 
-footer{
-  
     color: #ffefc1;
     text-shadow: 0px 0px 9px #f66b40;
     background-color: black;
@@ -177,14 +182,14 @@ footer{
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-  
+
 }
 
-h3{
+h3 {
     text-decoration: underline;
 }
 
-i{
+i {
     color: #ffefc1;
     font-size: 18px;
     text-align: center;
@@ -192,38 +197,45 @@ i{
     border-radius: 10%;
     padding: 15px;
 }
-.fa-youtube:hover{
+
+.fa-youtube:hover {
     background-color: red;
     color: white;
     box-shadow: 0 0px 40px red;
 }
-.fa-facebook-f:hover{
-    background-color:#1877f2;
+
+.fa-facebook-f:hover {
+    background-color: #1877f2;
     color: white;
     box-shadow: 0 0px 40px #1877f2;
 }
-.fa-instagram:hover{
-    background-color:#D43089;
+
+.fa-instagram:hover {
+    background-color: #D43089;
     color: white;
     box-shadow: 0 0px 40px #D43089;
 }
-.fa-spotify:hover{
+
+.fa-spotify:hover {
     background-color: #1DB954;
     color: white;
     box-shadow: 0 0px 40px #1DB954;
 }
-.fa-twitter:hover{
-    background-color:#1DA1F2 ;
+
+.fa-twitter:hover {
+    background-color: #1DA1F2;
     color: white;
     box-shadow: 0 0px 40px #1DA1F2;
 }
-.fa-tiktok:hover{
-    background-color:#25F4EE ;
+
+.fa-tiktok:hover {
+    background-color: #25F4EE;
     color: white;
     box-shadow: 0 0px 40px #25F4EE;
 }
-.fa-apple:hover{
-    background-color:#fc3c44 ;
+
+.fa-apple:hover {
+    background-color: #fc3c44;
     color: white;
     box-shadow: 0 0px 40px #fc3c44;
 }
