@@ -540,79 +540,64 @@ i {
     }
 
     header {
-        background-color: black;
-        width: 100%;
-        padding: 30px 0;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
-    .header__checkbox {
-        display: none;
-    }
 
     .header__open-nav-button {
-        display: none;
+        display: block;
+        font-size: 70px;
+        color: #fff;
+        z-index: 60;
     }
 
     .nav {
-        display: flex;
-    }
-
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .rotate {
-        border-radius: 50%;
-        width: 65px;
-        animation: rotateAnimation 6s infinite linear;
-        left: 600px;
-    }
-
-    .rotate2 {
-        border-radius: 50%;
-        width: 65px;
-        animation: rotateAnimation 6s infinite linear;
-        right: 600px;
-    }
-
-
-    @keyframes rotateAnimation {
-        to {
-            transform: rotate(360deg);
-        }
+        display: none;
+        font-size: 3em;
+        font-weight: 600;
+        position: absolute;
+        height: 100dvh;
+        width: 100dvw;
+        top: 0;
+        z-index: -1;
     }
 
     .menu-container-list {
-        font-size: 16px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        gap: 20px;
+        z-index: 100;
     }
-
-    .menu-container-item {
-        letter-spacing: 5px;
-        font-weight: 690;
-        transition: background 3s ease;
-    }
-
 
     .menu-item {
-        border: 1px solid #f66b40;
-        padding: 10px;
-        background-color: black;
-        color: #f66b40;
-        text-shadow: 0px 0px 9px #f66b40;
-        text-transform: uppercase;
-        border-radius: 50px;
-        margin: 10px 20px;
+        color: #000;
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        text-shadow: none;
     }
 
-    .menu-item:hover {
-        background: #ffefc1;
+    .header__checkbox:checked~body {
+        display: none;
+        overflow: hidden;
+    }
+
+    .header__checkbox:checked~.nav {
+        display: flex;
+        position: fixed;
+        z-index: 50;
+        background-color: #ffffff;
+        width: 150dvw;
+    }
+
+    .header__checkbox:checked~.header__open-nav-button {
+        color: #000;
+        position: fixed;
+        right: 18dvw;
     }
 
 
@@ -644,7 +629,7 @@ i {
 
     header {
         background-color: black;
-        width: 100%;
+        width: 100dvw;
         padding: 30px 0;
         display: flex;
         justify-content: space-evenly;
@@ -717,8 +702,6 @@ i {
     .menu-item:hover {
         background: #ffefc1;
     }
-
-
 }
 
 /* PCs pequeños */
@@ -734,6 +717,82 @@ i {
 
     .form-wrap {
         max-width: 100dvw;
+    }
+
+    header {
+        background-color: black;
+        width: 100%;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .header__checkbox {
+        display: none;
+    }
+    
+    .header__open-nav-button {
+        display: none;
+    }
+    
+    .nav {
+        display: flex;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rotate {
+        border-radius: 50%;
+        width: 65px;
+        animation: rotateAnimation 6s infinite linear;
+        left: 600px;
+    }
+    
+    .rotate2 {
+        border-radius: 50%;
+        width: 65px;
+        animation: rotateAnimation 6s infinite linear;
+        right: 600px;
+    }
+    
+    
+    @keyframes rotateAnimation {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .menu-container-list {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-container-item {
+        letter-spacing: 5px;
+        font-weight: 690;
+        transition: background 3s ease;
+    }
+    
+    
+    .menu-item {
+        border: 1px solid #f66b40;
+        padding: 10px;
+        background-color: black;
+        color: #f66b40;
+        text-shadow: 0px 0px 9px #f66b40;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin: 10px 20px;
+    }
+    
+    .menu-item:hover {
+        background: #ffefc1;
     }
 
 
