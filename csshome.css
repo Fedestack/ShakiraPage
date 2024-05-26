@@ -56,7 +56,6 @@ header {
 }
 
 
-
 @keyframes rotateAnimation {
     to {
         transform: rotate(360deg);
@@ -307,22 +306,204 @@ i {
 }
 
 
-/* @media screen and (max-width: 1200px) {
-   
-        
-    } */
+/* Teléfonos pequeños */
+@media screen and (max-width: 320px) {
+    /* Estilos específicos */
+    .parrafo {
+        flex-direction: column;
+        max-width: 100dvw;
+
+    }
+    .form-wrap {
+        max-width: 100dvw;
+    }
+}
+
+/* Teléfonos pequeños en modo paisaje y medianos en modo retrato */
+@media screen and (max-width: 480px) {
+    /* Estilos específicos */
+    .parrafo {
+        flex-direction: column;
+        max-width: 100dvw;
+    }
+
+    .rotate {
+        animation: none;
+    }
+
+    .form-wrap {
+        max-width: 100dvw;
+    }
+
+    .imagen {
+        margin: auto;
+    }
+
+.favicon:last-child {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header__checkbox:checked ~ h1 {
+        display: none;
+    }
     
 
-    @media screen and (max-width: 768px) {
-        .parrafo {
-            flex-direction: column;
-            max-width: 100dvw;
+    .header__checkbox {
+        display: none;
+    }
 
-        }
-        .form-wrap {
-            max-width: 100dvw;
-        }
+    .header__open-nav-button {
+        font-size: 70px;
+        color: #fff;
+        z-index: 60;
+    }
+    
+    .nav {
+        display: none;
+        font-size: 3em;
+        font-weight: 600;
+        position: absolute;
+        height: 100dvh;
+        width: 100dvw;
+        top: 0;
+        z-index: -1;
+    }
+
+    .menu-container-list {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-height: 40dvh;
+        gap: 20px;
+    }
+
+    .menu-item {
+        color: #000;
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        text-shadow: none;
+    }
+
+    .header__checkbox:checked ~ body {
+        display: none;
+        overflow: hidden;
+    }
+    
+    .header__checkbox:checked ~ .nav {
+        display: flex;
+        position: fixed;
+        z-index: 50;
+        background-color: #ffffff;
+
+    }
+
+    .header__checkbox:checked ~ .header__open-nav-button {
+        color: #000;
+        position: fixed;
+        right: 18dvw;
     }
 
 
+/* Teléfonos medianos en modo paisaje y grandes en modo retrato */
+@media screen and (max-width: 768px) {
+    /* Estilos específicos */
+    .parrafo {
+        flex-direction: column;
+        max-width: 100dvw;
+
+    }
+    .form-wrap {
+        max-width: 100dvw;
+    }
+    .imagen {
+        margin: auto;
+    }
+}
+
+
+
+/* Tablets en modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos */
+    .parrafo {
+        flex-direction: column;
+        max-width: 100dvw;
+
+    }
+    .form-wrap {
+        max-width: 100dvw;
+    }
+}
+
+/* Tablets en modo paisaje */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos */
+    .parrafo {
+        flex-direction: row;
+        align-items: center;
+        max-width: 100dvw;
+
+    }
+    .form-wrap {
+        max-width: 100dvw;
+    }
+
+    
+    
+}
+
+/* PCs pequeños */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* Estilos específicos */
+    .parrafo {
+        flex-direction: row;
+        align-items: center;
+        max-width: 100dvw;
+
+    }
+    .form-wrap {
+        max-width: 100dvw;
+    }
+
+    .header__checkbox {
+        display: none;
+    }
+    
+    .header__open-nav-button {
+        display: none;
+    }
+}
+
+/* PCs grandes */
+@media screen and (min-width: 1201px) {
+    /* Estilos específicos */
+    .parrafo {
+        flex-direction: row;
+        align-items: center;
+        max-width: 100dvw;
+
+    }
+    .form-wrap {
+        max-width: 100dvw;
+    }
+
+    .header__checkbox {
+        display: none;
+    }
+    
+    .header__open-nav-button {
+        display: none;
+    }
+}
+
+
+}
 
